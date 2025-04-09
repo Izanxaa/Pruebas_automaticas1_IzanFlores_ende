@@ -2,7 +2,7 @@ package org.example;
 
 public class Cuenta {
     private String numero;
-    private float saldo;
+    private static float saldo;
 
     public Cuenta (String numCta, float saldoCta) {
         numero = numCta;
