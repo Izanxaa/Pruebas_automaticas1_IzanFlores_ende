@@ -49,7 +49,8 @@ public class CuentaTest {
 
     @Test
     public void testNoPermiteRetiroNegativo() {
-
+        cuenta.extraerDinero(-10.0f);
+        assertEquals(100.0f, cuenta.getSaldo());
     }
 
     @Test
