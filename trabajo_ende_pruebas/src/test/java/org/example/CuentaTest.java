@@ -31,7 +31,8 @@ public class CuentaTest {
 
     @Test
     public void testNoPermiteIngresoNegativo() {
-
+        cuenta.ingresarDinero(-20.0f);
+        assertEquals(100.0f, cuenta.getSaldo();
     }
 
     @Test
