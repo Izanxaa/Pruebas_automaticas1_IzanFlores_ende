@@ -55,57 +55,28 @@ public class CuentaTest {
 
     @Test
     void getNumero() {
+        fail("FALLO");
     }
 
     @Test
     void getSaldo() {
+        fail("FALLO");
     }
 
     @Test
     void setNumero() {
+        fail("FALLO");
     }
 
     @Test
     void setSaldo() {
-    }
-
-    @Test
-    void ingresarDinero() {
-    }
-
-    @Test
-    void extraerDinero() {
-    }
-
-    @Test
-    void mostrarCuenta() {
-    }
-
-    @Test
-    void testGetNumero() {
-    }
-
-    @Test
-    void testGetSaldo() {
-    }
-
-    @Test
-    void testSetNumero() {
-    }
-
-    @Test
-    void testSetSaldo() {
-    }
-
-    @Test
-    void testIngresarDinero1() {
-    }
-
-    @Test
-    void testExtraerDinero() {
+        fail("FALLO");
     }
 
     @Test
     void testMostrarCuenta() {
+        cuenta.mostrarCuenta();
+        assertNotNull(cuenta.getNumero());
+        assertTrue(cuenta.getSaldo() >= 0);
     }
 }
