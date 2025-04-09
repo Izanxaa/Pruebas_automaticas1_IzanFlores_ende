@@ -43,7 +43,8 @@ public class CuentaTest {
 
     @Test
     public void testNoPermiteRetiroExcesivo() {
-
+        cuenta.extraerDinero(200.0f);
+        assertEquals(100.0f, cuenta.getSaldo());
     }
 
     @Test
