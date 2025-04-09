@@ -15,7 +15,7 @@ public class CuentaTest {
 
     @Test
     public void testTitularNoEsNull() {
-        assertNotNull(cuenta.getTitular());
+        assertNotNull(cuenta.getNumero());
     }
 
     @Test
@@ -25,7 +25,8 @@ public class CuentaTest {
 
     @Test
     public void testIngresarDinero() {
-
+        Cuenta.ingresarDinero(50.0F);
+        assertEquals(150.0f, cuenta.getSaldo());
     }
 
     @Test

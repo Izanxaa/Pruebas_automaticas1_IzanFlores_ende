@@ -25,7 +25,7 @@ public class Cuenta {
         saldo = saldoCta;
     }
 
-    public void ingresarDinero(float importe){
+    public static void ingresarDinero(float importe){
         saldo = saldo + importe;
     }
 
