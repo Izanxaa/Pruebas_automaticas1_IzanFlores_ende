@@ -10,7 +10,7 @@ public class CuentaTest {
 
     @BeforeEach
     public void setUp() {
-        cuenta = new Cuenta("Juan", 100.0);
+        cuenta = new Cuenta("Juan", 100.0F);
     }
 
     @Test
@@ -32,12 +32,13 @@ public class CuentaTest {
     @Test
     public void testNoPermiteIngresoNegativo() {
         cuenta.ingresarDinero(-20.0f);
-        assertEquals(100.0f, cuenta.getSaldo();
+        assertEquals(100.0f, cuenta.getSaldo());
     }
 
     @Test
     public void testRetirarDinero() {
-
+        cuenta.extraerDinero(40.0f);
+        assertEquals(60.0f, cuenta.getSaldo());
     }
 
     @Test
@@ -105,5 +106,4 @@ public class CuentaTest {
     @Test
     void testMostrarCuenta() {
     }
-}
 }
